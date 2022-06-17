@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./onepage/css/bootstrap.min.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>POST PAGE</h1>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <form id="post-form">
+                    <div class="mb-3">
+                      <label for="title" class="form-label" >Post Title</label>
+                      <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="body"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                    </div>
+                    <div class=" d-flex">
+                    <button type="submit" class="btn btn-primary">Create Post</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <lottie-player src="./lottie/108347-designer.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="card-section mt-3 py-5" >
+        <div class="container">
+            <div class="row" id="post-holder">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                          <p>1</p>
+                            <p id="post-title">loremE</p>
+                            <p id="post-body"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+                             non officia magnam reiciendis at sit sint omnis quo a dolorum quas
+                              quasi nostrum vel molestiae, 
+                            sapiente sed inventore ipsa! Laudantium? </p>
+                        </div>
+                        
+                            <div class="d-flex justify-content-between">
+                                <button type="submit" class="btn btn-primary py-5" onclick="updatePost()">Update Post</button>
+                                <button type="submit" class="btn btn-primary py-5" onclick="viewPost()">View Post</button>
+                                <button type="submit" class="btn btn-danger py-5" onclick="deletePost()">Delete Post</button>
+                            </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
+</body>
+<script src="./index.js"></script>
+<script src="./onepage/js/bootstrap.min.js"></script>
+</html>
