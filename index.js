@@ -15,8 +15,8 @@ function getPost(){
   postBox.forEach(post => {
   //  console.log(post)
     postHolder += `
-    <div class="col-lg-6 col-md-12">
-                  <div class="card  mt-5 ">
+    <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="card  mt-5 h-100 ">
                       <div class="card-body">
                       <p>${post.id}</p>  
                       <p id="post-title">${post.title}</p>
@@ -69,8 +69,8 @@ alert('create post?')
       postBox.forEach(post => {
         console.log(post)
          postHolder += `
-         <div class="col-lg-6 col-md-12">
-                       <div class="card">
+         <div class="col-lg-6 col-md-12 mb-3">
+                       <div class="card h-100">
                            <div class="card-body py-3">
                            <p>${post.id}</p>  
                            <p id="post-title">${post.title}</p>
@@ -170,8 +170,8 @@ let postHolder = ''
       postBox.forEach(post => {
         console.log(post)
          postHolder += `
-         <div class="col-lg-6 col-md-12 py-3">
-                       <div class="card  mb-3">
+         <div class="col-lg-6 col-md-12 py-3 mb-3">
+                       <div class="card  h-100">
                            <div class="card-body">
                            <p>${post.id}</p>  
                            <p id="post-title">${post.title}</p>
