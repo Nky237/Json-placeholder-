@@ -16,7 +16,7 @@ function getPost(){
   //  console.log(post)
     postHolder += `
     <div class="col-lg-6 col-md-12">
-                  <div class="card">
+                  <div class="card  mt-5 ">
                       <div class="card-body">
                       <p>${post.id}</p>  
                       <p id="post-title">${post.title}</p>
@@ -24,9 +24,9 @@ function getPost(){
                       </div>
                       
                           <div class="d-flex justify-content-between">
-                          <button type="submit" class="btn btn-primary mb-2" onclick="updatePost(${post.id})">Update Post</button>
-                          <button type="submit" class="btn btn-primary mb-2" onclick="viewPost(${post.id})">View Post</button>
-                          <button type="submit" class="btn btn-danger mb-2" onclick="deletePost(${post.id})">Delete Post</button>
+                          <button type="submit" class="btn btn-primary mb-2 m-2" onclick="updatePost(${post.id})">Update Post</button>
+                          <button type="submit" class="btn btn-primary mb-2 m-2" onclick="viewPost(${post.id})">View Post</button>
+                          <button type="submit" class="btn btn-danger mb-2  m-2" onclick="deletePost(${post.id})">Delete Post</button>
                           </div>
 
                       
@@ -71,16 +71,16 @@ alert('create post?')
          postHolder += `
          <div class="col-lg-6 col-md-12">
                        <div class="card">
-                           <div class="card-body">
+                           <div class="card-body py-3">
                            <p>${post.id}</p>  
                            <p id="post-title">${post.title}</p>
                                <p id="post-body">${post.body}</p>
                            </div>
                            
                                <div class="d-flex justify-content-between">
-                               <button type="submit" class="btn btn-primary mb-2" onclick="updatePost(${post.id})">Update Post</button>
-                               <button type="submit" class="btn btn-primary mb-2" onclick="viewPost(${post.id})">View Post</button>
-                               <button type="submit" class="btn btn-danger mb-2" onclick="deletePost(${post.id})">Delete Post</button>
+                               <button type="submit" class="btn btn-primary mb-2 m-2" onclick="updatePost(${post.id})">Update Post</button>
+                               <button type="submit" class="btn btn-primary mb-2 m-2" onclick="viewPost(${post.id})">View Post</button>
+                               <button type="submit" class="btn btn-danger mb-2 m-2" onclick="deletePost(${post.id})">Delete Post</button>
                                </div>
    
                            
@@ -170,8 +170,8 @@ let postHolder = ''
       postBox.forEach(post => {
         console.log(post)
          postHolder += `
-         <div class="col-lg-6 col-md-12">
-                       <div class="card">
+         <div class="col-lg-6 col-md-12 py-3">
+                       <div class="card  mb-3">
                            <div class="card-body">
                            <p>${post.id}</p>  
                            <p id="post-title">${post.title}</p>
@@ -179,9 +179,9 @@ let postHolder = ''
                            </div>
                            
                                <div class="d-flex justify-content-between">
-                               <button type="submit" class="btn btn-primary" onclick="updatePost(${post.id})">Update Post</button>
-                               <button type="submit" class="btn btn-primary" onclick="viewPost(${post.id})">View< Post/button>
-                               <button type="submit" class="btn btn-danger" onclick="deletePost(${post.id})">Delete Post</button>
+                               <button type="submit" class="btn btn-primary mb-2 m-2 " onclick="updatePost(${post.id})">Update Post</button>
+                               <button type="submit" class="btn btn-primary mb-2 m-2" onclick="viewPost(${post.id})">View Post</button>
+                               <button type="submit" class="btn btn-danger mb-2 m-2" onclick="deletePost(${post.id})">Delete Post</button>
                                </div>
    
                            
